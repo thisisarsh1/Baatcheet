@@ -16,7 +16,7 @@ const config: Config = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
-  darkMode:"class",
+  dark:"class",
   theme: {
     container: {
       center: true,

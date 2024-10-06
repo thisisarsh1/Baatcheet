@@ -8,6 +8,7 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { signIn } from 'next-auth/react';
 import toast from "react-hot-toast";
+import Component from "./login-btn";
 
 function Login() {
   const [password, setPassword] = useState("");
@@ -103,6 +104,8 @@ function Login() {
           </button>
         </div>
       </form>
+
+      <Component></Component>
     </div>
   );
 }

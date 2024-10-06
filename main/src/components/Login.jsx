@@ -19,20 +19,16 @@ function Login() {
 
   async function loginWithGoogle() {
     setLoading(true);
+    
     try {
-      const result = await signIn('google', { redirect: false });
-      if (result.error) {
-        toast.error(`An error occurred: ${result.error}`);
-      } else {
-        toast.success("Successfully signed in with Google");
-        router.push('/'); // Redirect to home or any other page
-      }
+      await signIn('google')
     } catch (error) {
-      toast.error("An unexpected error occurred");
-      console.error("Error during sign-in:", error);
+      // display error message to user
+      toast.error('Something went wrong with your login.')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
+    
   }
 
   return (

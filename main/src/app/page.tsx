@@ -12,7 +12,10 @@ export default function Home() {
       <Link href="/Login">
       Login
       </Link>
-      
+      <br></br>
+      <Link href="/AddFriend">
+     Add friend
+      </Link>
     </div>
   );
 }
